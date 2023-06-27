@@ -6,7 +6,7 @@ export default function useJoke() {
   const [badJokes, setBadJokes] = useState([]);
 
   const handleVote = (event) => {
-    if (event.target.value === "👍🏾") {
+    if (event.target.textContent === "👍🏾") {
       setGoodJokes([...goodJokes, joke]);
     } else {
       setBadJokes([...badJokes, joke]);

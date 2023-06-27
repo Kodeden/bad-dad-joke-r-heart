@@ -1,6 +1,6 @@
+import Joke from "./components/Joke";
 import JokeButton from "./components/JokeButton";
 import JokeList from "./components/JokeList";
-import JokeText from "./components/JokeText";
 import JokeVote from "./components/JokeVote";
 import useJoke from "./hooks/useJoke";
 
@@ -8,10 +8,10 @@ function App() {
   const { joke, setJoke, goodJokes, badJokes, handleVote } = useJoke();
 
   return (
-    <main className="container mx-auto flex flex-col items-center gap-y-8">
+    <main className=" mx-auto flex flex-col items-center">
       <section className="flex flex-col items-center gap-y-8 border-y py-8">
         <JokeButton setJoke={setJoke} />
-        <JokeText joke={joke} />
+        <Joke joke={joke} />
         {joke && <JokeVote onClick={handleVote} />}
       </section>
       <section className="grid grid-cols-2 divide-x [&>*]:px-8">

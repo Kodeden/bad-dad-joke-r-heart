@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 export default function Joke({ joke }) {
   return (
-    <section className="text-center text-3xl">
+    <section className="text-center text-xl">
       <p className="font-bold">{joke?.setup}</p>
       <p>{joke?.punchline}</p>
     </section>

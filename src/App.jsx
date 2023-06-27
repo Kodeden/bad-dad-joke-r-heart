@@ -15,8 +15,8 @@ function App() {
         {joke && <JokeVote onClick={handleVote} />}
       </section>
       <section className="grid grid-cols-2 divide-x [&>*]:px-8">
-        <JokeList title="👍🏾 Jokes 😆" jokes={goodJokes} />
-        <JokeList title="👎🏾 Jokes 😿" jokes={badJokes} />
+        <JokeList title="👍🏾 Jokes 🤣" jokes={goodJokes} />
+        <JokeList title="👎🏾 Jokes 🤢" jokes={badJokes} />
       </section>
     </main>
   );

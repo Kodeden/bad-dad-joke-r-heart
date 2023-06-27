@@ -4,7 +4,7 @@ export default function JokeButton({ setJoke }) {
   return (
     <button
       type="button"
-      className="rounded bg-green-900 p-3 text-white"
+      className="rounded bg-black p-3 text-white"
       onClick={() => {
         fetch("https://official-joke-api.appspot.com/random_joke")
           .then((res) => res.json())
@@ -22,7 +22,7 @@ export default function JokeButton({ setJoke }) {
           });
       }}
     >
-      Get Joke
+      Get A Joke
     </button>
   );
 }
